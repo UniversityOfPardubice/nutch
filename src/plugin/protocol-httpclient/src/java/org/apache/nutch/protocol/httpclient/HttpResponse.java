@@ -68,7 +68,7 @@ public class HttpResponse implements Response {
     // Prepare GET method for HTTP request
     this.url = url;
     GetMethod get = new GetMethod(url.toString());
-    get.setFollowRedirects(followRedirects);
+    get.setFollowRedirects(true);
     get.setDoAuthentication(true);
     if (datum.getModifiedTime() > 0) {
       get.setRequestHeader("If-Modified-Since",
