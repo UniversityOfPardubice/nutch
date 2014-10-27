@@ -63,7 +63,7 @@ public class UpceTagsIndexingFilter
 
     public NutchDocument filter(NutchDocument doc, Parse parse, Text textUrl, CrawlDatum datum,
             Inlinks inlinks) throws IndexingException {
-        LOG.info("UpceTagsIndexingFilter filter: doc=[" + doc + "]; parse=[" + parse + "]; textUrl=[" + textUrl + "], datum=[" + datum + "], inlinks=[" + inlinks + "]");
+        LOG.info("UpceTagsIndexingFilter filter: textUrl=[" + textUrl + "], datum=[" + datum + "], inlinks=[" + inlinks + "]");
         URL url = null;
         try {
             url = new URL(textUrl.toString());

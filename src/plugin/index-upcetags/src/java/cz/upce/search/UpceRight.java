@@ -47,7 +47,7 @@ public enum UpceRight {
     }
 
     private void setRightsByXml(NutchDocument doc, URL url) {
-        LOG.info("UpceRight - setRightsByXml; doc=[" + doc + "], url=[" + url + "]");
+        LOG.info("UpceRight - setRightsByXml; url=[" + url + "]");
         String rightsUrl;
         rightsUrl = url.toExternalForm().replaceFirst("\\.[^.]+$", "_rights.xml");
         LOG.info("UpceRight - setRightsByXml; rightsUrl=[" + rightsUrl + "]");
